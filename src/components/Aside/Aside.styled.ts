@@ -13,4 +13,8 @@ export const AsideStyled = styled.aside`
         flex-direction: column;
         gap:4px
     }
+
+    @media (max-width: 728px){
+        height: fit-content;
+    }
 `

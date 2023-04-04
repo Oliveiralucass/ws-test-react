@@ -14,5 +14,9 @@ export const EditBtnStyled = styled.button`
     &:hover{
         background-color: var(--color-detail-blue-on-hover);
     }
+
+    @media (max-width: 728px){
+        font-size: 1rem;
+    }
 `
 

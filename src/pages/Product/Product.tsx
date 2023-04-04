@@ -26,11 +26,19 @@ export const Product = () => {
         <Header />
 
         <ProductStyledForm>
+          <h2>Edit {state.name}</h2>
            <form onSubmit={handleSubmit((data:IProduct) =>  onSubmit(data))}>
+                <div>
+                  <label htmlFor="name">Name:</label>
+                </div>
                 <input type='text' id='name' {...register('name')} defaultValue={state?.name}/>
+
+                <div>
+                  <label htmlFor="price">Price:</label>
+                </div>
                 <input type='text' id='price' {...register('price')} defaultValue={state?.price}/>
 
-                <button type='submit'>Enviar</button>
+                <button type='submit'>Save</button>
            </form>
         </ProductStyledForm>
         

@@ -12,6 +12,10 @@ export const ProductsListStyled = styled.section`
         gap: 20px;
         min-height: 600px
     }
+
+    @media (max-width: 868px){
+        width: 100%;
+    }
 `
 
 export const ProductListElementStyled = styled.li`
@@ -26,6 +30,10 @@ export const ProductListElementStyled = styled.li`
     }
     span{
         font-weight: 500;
+    }
+
+    @media (max-width: 450px){
+        gap: 10px;
     }
 
 `

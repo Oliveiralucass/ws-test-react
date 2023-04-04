@@ -16,4 +16,8 @@ export const RemoveBtnStyled = styled.div`
     &:hover{
         background-color:#991b1b ;
     }
+
+    @media (max-width: 728px){
+        font-size: 1rem;
+    }
 `

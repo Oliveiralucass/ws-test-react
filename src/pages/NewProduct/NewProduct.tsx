@@ -25,11 +25,20 @@ export const NewProduct = () => {
         <Header />
 
         <NewProductStyledForm>
+
+          <h2>Add new product</h2>
            <form onSubmit={handleSubmit((data:IProduct) =>  onSubmit(data))}>
+                <div>
+                  <label htmlFor="name">Name:</label>
+                </div>
                 <input type='text' id='name' {...register('name')}/>
+
+                <div>
+                  <label htmlFor="price">Price:</label>
+                </div>
                 <input type='text' id='price' {...register('price')}/>
 
-                <button type='submit'>Enviar</button>
+                <button type='submit'>Add</button>
            </form>
         </NewProductStyledForm>
         

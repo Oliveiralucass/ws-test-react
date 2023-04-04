@@ -1,15 +1,19 @@
 import React from 'react'
 import { HeaderImageStyled, HeaderStyled, HeaderStyledContainer, HeaderTextStyled } from './Header.styled'
 import LOGO from '../../assets/images/logows.svg'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
     <HeaderStyled>
       <HeaderStyledContainer>
-        <HeaderImageStyled>
-          <img src={LOGO} alt="WS Work Sistemas" />
-          <h3>Sistemas</h3>
-        </HeaderImageStyled>
+        <Link to={'/'}>
+          <HeaderImageStyled>
+            <img src={LOGO} alt="WS Work Sistemas" />
+            <h3>Sistemas</h3>
+          </HeaderImageStyled>
+        </Link>
+        
         
         
         <HeaderTextStyled>

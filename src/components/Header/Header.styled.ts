@@ -24,6 +24,7 @@ export const HeaderImageStyled = styled.div`
     display: flex;
     gap: 8px;
     align-items: center;
+    color: #ffffff;
 
     img{ 
         width: 48px;
