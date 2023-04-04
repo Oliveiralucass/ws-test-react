@@ -7,7 +7,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, li{
+  list-style-type: none;
+}
+
+:root{
+  --color-primary: #FDCF43;
+  --color-secondary: #000040;
+  --color-detail-blue: #428BCA;
+  --color-detail-blue-on-hover: #206199;
 }
